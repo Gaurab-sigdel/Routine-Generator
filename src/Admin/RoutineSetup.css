@@ -1,0 +1,336 @@
+/* === Overlay & Modal === */
+.routine-setup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.routine-setup-card {
+    background: #f9fafb;
+    padding: 24px;
+    width: 720px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-height: 95vh;
+    overflow-y: auto;
+    position: relative;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.modal-exit-btn {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 22px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+}
+
+.modal-exit-btn:hover {
+    color: #d32f2f;
+}
+
+.date-range-row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 18px;
+}
+
+.date-range-row>div {
+    flex: 1;
+}
+
+.routine-setup-card label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #111827;
+}
+
+.routine-setup-card input[type="date"],
+.routine-setup-card input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background: white;
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.calendar-holiday-row {
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.holiday-calendar-box {
+    flex: 1.4;
+    min-width: 320px;
+}
+
+.holiday-list-box {
+    flex: 0 0 240px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 14px;
+    color: #111827;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.holiday-list-box h5 {
+    margin: 0 0 12px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.holiday-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.holiday-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.holiday-list li:last-child {
+    border-bottom: none;
+}
+
+.holiday-date {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.holiday-reason {
+    color: #475569;
+    font-style: italic;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.react-calendar {
+    width: 100%;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1f2937;
+}
+
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.react-calendar__navigation button {
+    background: none;
+    border: none;
+    color: #374151;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.react-calendar__navigation button:hover {
+    background: #e5e7eb;
+}
+
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #6b7280;
+    padding-bottom: 4px;
+}
+
+.react-calendar__tile {
+    padding: 12px 0;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.2s ease;
+    color: #1f2937;
+}
+
+.react-calendar__tile:hover {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.react-calendar__tile--now {
+    background: #fef9c3;
+    color: #92400e;
+    border-radius: 50%;
+}
+
+.react-calendar__tile--active {
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+}
+
+.holiday {
+    background: #f87171 !important;
+    color: white !important;
+    border-radius: 50%;
+}
+
+.add-btn,
+.remove-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+
+.add-btn {
+    background-color: #2563eb;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.remove-btn {
+    background-color: #dc2626;
+    color: white;
+}
+
+.remove-btn:hover {
+    background-color: #b91c1c;
+}
+
+.routine-buttons {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.generate-btn {
+    background-color: #10b981;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.generate-btn:hover {
+    background-color: #059669;
+}
+
+.routine-preview-container {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.routine-preview-container h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.routine-preview-table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.routine-preview-table th,
+.routine-preview-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+    background-color: white;
+    color: #111;
+}
+
+.routine-preview-table th {
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.routine-table-wrapper {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.routine-buttons-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.pdf-export-btn {
+    padding: 10px 16px;
+    background-color: #3a6ea5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.routine-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: crimson;
+    background: none;
+    border: 2px solid crimson;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.routine-close-btn:hover {
+    color: darkred;
+}

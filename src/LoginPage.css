@@ -1,0 +1,145 @@
+/* Full screen with gradient */
+.login-page {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to right, #00c9ff, #92fe9d, #f2709c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* White login card box */
+.login-card {
+  background: rgba(255, 255, 255, 0.2);
+  /*semi transparent white dinxa */
+  backdrop-filter: blur(10px);
+  /*blurr effect dinxa*/
+  padding: 40px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: black;
+}
+
+/* Welcome text */
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input field style */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  font-size: 14px;
+  color: black;
+}
+
+/* Label for inputs */
+label {
+  display: block;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+/* Divider text */
+.or-text {
+  margin: 20px 0 10px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Google button */
+.google-btn {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  /* Blue gradient */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for both buttons */
+.login-btn:hover,
+.signup-btn:hover {
+  background: black;
+  /* Turn background black */
+  color: white;
+  /* Keep text white */
+}
+
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.forgot-password-btn:hover {
+  color: #0056b3;
+}
+
+/* Role dropdown style */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: black;
+
+  appearance: auto;
+  background-image: none;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}

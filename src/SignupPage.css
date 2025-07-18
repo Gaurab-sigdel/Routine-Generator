@@ -1,0 +1,125 @@
+/* Full screen with gradient */
+.signup-page {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #00c9ff, #92fe9d, #f2709c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White signup card box */
+.signup-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: black;
+}
+
+/* Title text */
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input field style */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    font-size: 14px;
+    color: black;
+}
+
+/* Label for inputs */
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Sign Up button */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.signup-btn:hover {
+    background: black;
+    color: white;
+}
+
+/* Divider text */
+.or-text {
+    margin: 20px 0 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Google button */
+.google-btn {
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Link to login */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.resend-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.resend-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.resend-btn:disabled {
+    background-color: #ddd;
+    color: #999;
+    border-color: #aaa;
+    cursor: not-allowed;
+}
